@@ -1,5 +1,5 @@
 (function()
 {
-    $("#footer-placeholder").load("../html/footer.html");
+    $("#footer-placeholder").load("/webProject/html/footer.html");
 })(jQuery);
 
