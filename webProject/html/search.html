@@ -1,24 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <div id="nav-placeholder"></div>
 </head>
+
 <body>
-    <h2> Search </h2>
-
-    <button id="search-button"> Search </button>
-
-    <form>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-    </form>
-    <div id="search-list">
-
+    <div class="jumbotron">
+        <h1 class="display-4">Search our <b>Articles</b></h1>
+        <p class="lead">Use the search bar to enter keywords for articles</p>
     </div>
-    
-    <script src="../js/search.js"></script>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="input-group rounded col-lg-4">
+                <input type="search" class="form-control rounded" placeholder="Search using keywords"
+                    aria-label="Search" aria-describedby="search-addon" />
+                <span class="input-group-text border-0" id="search-addon">
+                    <i class="fas fa-search"></i>
+                </span>
+            </div>
+
+            <!-- Section: Blog v.1 -->
+            <section class="my-5">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-12">
+
+                        <!-- Category -->
+                        <a href="#!" class="green-text">
+                            <h6 class="font-weight-bold mb-3"><i class="fas fa-utensils pr-2"></i>Beer</h6>
+                        </a>
+                        <!-- Post title -->
+                        <h3 class="font-weight-bold mb-3"><strong>Our newest beer</strong></h3>
+                        <!-- Excerpt -->
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
+                            quod maxime
+                            placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut
+                            officiis debitis Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste error
+                            tempore, nam assumenda id, hic voluptate facilis magnam aperiam voluptates fugiat ut nobis
+                            ducimus, deserunt doloremque eveniet blanditiis a nemo culpa laborum cum inventore. Debitis
+                            deleniti et voluptates, molestias dolore cupiditate temporibus? Ullam eius accusantium, odit
+                            corrupti harum suscipit perspiciatis Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Corporis quo quaerat temporibus, sapiente magnam vitae praesentium cum non error
+                            minima autem excepturi, officiis perspiciatis consectetur dolore. Labore atque quam
+                            quibusdam omnis, repellendus inventore corrupti magnam aliquid, ea minima libero dolor natus
+                            voluptas autem aut. Quae repellat minus dolores magnam ut quo velit? Unde commodi similique
+                            harum mollitia doloremque quibusdam consectetur tempora, dolore exercitationem, a iure culpa
+                            vel? Eligendi a ducimus delectus rem iure nemo maxime vitae accusamus, quo dolorum similique
+                            quam optio recusandae omnis inventore amet quae, esse suscipit possimus dolore? Quasi, eaque
+                            nostrum ad natus aspernatur molestias vel praesentium!!.</p>
+                        <!-- Post data -->
+                        <p>by <a><strong>Simon White</strong></a>, 19/08/2018</p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+                <hr class="my-5">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-12">
+
+                        <!-- Category -->
+                        <a href="#!" class="pink-text">
+                            <h6 class="font-weight-bold mb-3"><i class="fas fa-image pr-2"></i>Business</h6>
+                        </a>
+                        <!-- Post title -->
+                        <h3 class="font-weight-bold mb-3"><strong>Business is booming!</strong></h3>
+                        <!-- Excerpt -->
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
+                            quod maxime
+                            placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut
+                            officiis debitis Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste error
+                            tempore, nam assumenda id, hic voluptate facilis magnam aperiam voluptates fugiat ut nobis
+                            ducimus, deserunt doloremque eveniet blanditiis a nemo culpa laborum cum inventore. Debitis
+                            deleniti et voluptates, molestias dolore cupiditate temporibus? Ullam eius accusantium, odit
+                            corrupti harum suscipit perspiciatis Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Corporis quo quaerat temporibus, sapiente magnam vitae praesentium cum non error
+                            minima autem excepturi, officiis perspiciatis consectetur dolore. Labore atque quam
+                            quibusdam omnis, repellendus inventore corrupti magnam aliquid, ea minima libero dolor natus
+                            voluptas autem aut. Quae repellat minus dolores magnam ut quo velit? Unde commodi similique
+                            harum mollitia doloremque quibusdam consectetur tempora, dolore exercitationem, a iure culpa
+                            vel? Eligendi a ducimus delectus rem iure nemo maxime vitae accusamus, quo dolorum similique
+                            quam optio recusandae omnis inventore amet quae, esse suscipit possimus dolore? Quasi, eaque
+                            nostrum ad natus aspernatur molestias vel praesentium!!.</p>
+                        <!-- Post data -->
+                        <p>by <a><strong>Megan Crouch</strong></a>, 14/08/2018</p>
+
+                    </div>
+                    <!-- Grid column -->
+
+
+                </div>
+                <!-- Grid row -->
+
+                <hr class="my-5">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-12">
+
+                        <!-- Category -->
+                        <a href="#!" class="indigo-text">
+                            <h6 class="font-weight-bold mb-3"><i class="fas fa-suitcase pr-2"></i>Business</h6>
+                        </a>
+                        <!-- Post title -->
+                        <h3 class="font-weight-bold mb-3"><strong>The new fermentation process</strong></h3>
+                        <!-- Excerpt -->
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
+                            quod maxime
+                            placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut
+                            officiis debitis Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste error
+                            tempore, nam assumenda id, hic voluptate facilis magnam aperiam voluptates fugiat ut nobis
+                            ducimus, deserunt doloremque eveniet blanditiis a nemo culpa laborum cum inventore. Debitis
+                            deleniti et voluptates, molestias dolore cupiditate temporibus? Ullam eius accusantium, odit
+                            corrupti harum suscipit perspiciatis Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Corporis quo quaerat temporibus, sapiente magnam vitae praesentium cum non error
+                            minima autem excepturi, officiis perspiciatis consectetur dolore. Labore atque quam
+                            quibusdam omnis, repellendus inventore corrupti magnam aliquid, ea minima libero dolor natus
+                            voluptas autem aut. Quae repellat minus dolores magnam ut quo velit? Unde commodi similique
+                            harum mollitia doloremque quibusdam consectetur tempora, dolore exercitationem, a iure culpa
+                            vel? Eligendi a ducimus delectus rem iure nemo maxime vitae accusamus, quo dolorum similique
+                            quam optio recusandae omnis inventore amet quae, esse suscipit possimus dolore? Quasi, eaque
+                            nostrum ad natus aspernatur molestias vel praesentium!!.</p>
+                        <!-- Post data -->
+                        <p>by <a><strong>Niall Duggan</strong></a>, 11/08/2018</p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </section>
+            <!-- Section: Blog v.1 -->
+
+        </div>
+    </div>
+
+
 </body>
+
+<footer id="footer-placeholder">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/navbar.js"></script>
+    <script type="text/javascript" src="../js/footer.js"></script>
+</footer>
+
 </html>
