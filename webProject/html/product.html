@@ -18,9 +18,9 @@
 
 <body>
     <div class="jumbotron">
-        <h1 class="display-4">Welcome to <b>*Name*</b></h1>
-        <p class="lead">*tagline*</p>
-        <p class="lead">First Brewed: <b>*insert date*</b></p>
+        <h1 id= "beer-name" class="display-4">Welcome to <b>*Name*</b></h1>
+        <p id="beer-tagline" class="lead">*tagline*</p>
+        <p id="beer-date" class="lead">First Brewed: <b>*insert date*</b></p>
     </div>
 
     <div class="container">
@@ -37,8 +37,7 @@
 
                         <!-- Featured image -->
                         <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
-                            <img class="img-fluid"
-                                src=""
+                            <img id="beer-img" class="img-fluid"
                                 alt="Sample image">
                             <a>
                                 <div class="mask rgba-white-slight"></div>
@@ -52,20 +51,13 @@
                     <div class="col-lg-7">
 
                         <!-- Category -->
-                        <a href="#!" class="green-text">
-                            <h6 class="font-weight-bold mb-3"><i class="fas fa-utensils pr-2"></i>ABV: *insert abv*</h6>
+                        <a class="green-text">
+                            <h6 id= "beer-abv" class="font-weight-bold mb-3"><i class="fas fa-utensils pr-2"></i></h6>
                         </a>
                         <!-- Excerpt -->
-                        <p><b>Description: </b>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
-                            quod maxime
-                            placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut
-                            officiis debitis Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste error
-                            tempore, nam assumenda id, hic voluptate facilis magnam aperiam voluptates fugiat ut nobis
-                            ducimus, deserunt doloremque eveniet blanditiis a nemo culpa laborum cum inventore. Debitis
-                            deleniti et voluptates, molestias dolore cupiditate temporibus? Ullam eius accusantium, odit
-                            corrupti harum suscipit perspiciatis!.</p>
+                        <p id ="beer-description"><b>Description: </b></p>
 
-                            <p><b>Try it with: </b>*insert food pairings*</p>
+                            <p id="beer-foodpairings"><b>Try it with: </b >*insert food pairings*</p>
                         <!-- Post data -->
                         <p><strong>Fermentcat</strong></p>
 
@@ -86,5 +78,6 @@
     <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
     <script type="text/javascript" src="../js/navbar.js"></script>
     <script type="text/javascript" src="../js/footer.js"></script>
+    <script type="text/javascript" src="../js/product.js"></script>
 </footer>
 </html>
