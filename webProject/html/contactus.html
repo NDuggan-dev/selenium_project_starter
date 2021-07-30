@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-=======
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Contact US</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
+        <div id="nav-placeholder"></div>
+    </head>
 
->>>>>>> 389ddd75f63d706ede47b41e982024238bf6b593
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>ContactUs</title>
-</head>
-<header></header>
 <body>
     <div class="container">
         <div style="text-align:center">
@@ -41,15 +44,15 @@
           </div>
         </div>
       </div>
-<footer id="footer-placeHolder">
+      <footer id="footer-placeholder">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
-        <script type="text/javascript" src="./js/navbar.js"></script>
-        <script type="text/javascript" src="./js/footer.js"></script>
-        <script type="text/javascript" src= "../js/contactus.js"></script>
+        <script type="text/javascript" src="../js/navbar.js"></script>
+        <script type="text/javascript" src="../js/footer.js"></script>
     </footer>
+    </html>
 
       <style>
 * {
@@ -79,7 +82,6 @@
      
       .container {
         border-radius: 5px;
-        background-color: #f2f2f2;
         padding: 10px;
       }
       
@@ -106,174 +108,5 @@
       
 </style>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
-=======
-
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
-    <div id="nav-placeholder"></div>
-</head>
-
-<body>
-    <divb class="container">
-        <div style="text-align:center">
-            <h1>Contact Us</h1>
-            <p>Swing by for a pint of beer or drop us a message!</p>
-        </div>
-        <div class="row">
-            <div class="column">
-                <img src="https://pixahive.com/wp-content/uploads/2020/09/Glass-of-beer-93583-pixahive.jpg"
-                    style="width:100%">
-            </div>
-            <div class="column">
-                <form id="myfrm" method="get">
-                    <label for="fname">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name..">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" email="email" placeholder="Your email..">
-                    <label for="title">Issue Title</label>
-                    <select id="title" >
-                        <option value="OrderNotArrived">Order Not Arrived</option>
-                        <option value="OrderDamaged">Order Damaged</option>
-                        <option value="OtherSubject">Other Subject
-                        </option>
-                    </select>
-                    <label for="subject">Issue Description</label>
-                    <textarea id="subject" name="subject" placeholder="How can we help.."style="height:170px"></textarea>
-                    <input type="submit" value="Submit" id="submit" onclick="myPrint('myfrm')">
-                </form>
-            </div>
-           
-            <script>
-                function myPrint(myfrm) {
-                    let formData = new FormData([myfrm]);
-                    formData.append('data', name);
-                    formData.append('data', email);
-                    formData.append('data', title);
-                    formData.append('data', subject);
-
-                    formData.getAll('data');
-                }
-            </script>
-
-        </div>
-        </div>
-        <footer id="footer-placeHolder">
-            <script
-                src="https:
-                                                                                                //code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous">
-                </script>
-            <script
-                src="https:
-                                                                                                    //cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-                crossorigin="anonymous">
-                </script>
-            <script
-                src="https:
-                                                                                                        //stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-                crossorigin="anonymous">
-                </script>
-            <script
-                type="text
-                                                                                                            /javascript"
-                src="//code.jquery.com/jquery.min.js">
-                                                                                                            </script>
-            <script
-                type="text
-                                                                                                                /javascript"
-                src="./js/navbar.js">
-                                                                                                                </script>
-            <script
-                type="text
-                                                                                                                    /javascript"
-                src="./js/footer.js">
-                                                                                                                    </script>
-        </footer>
-
-        <style>
-            * {
-                box-sizing: border-box;
-            }
-
-            input[type=text],
-            select,
-            textarea {
-                width: 100%;
-                padding: 12px;
-                border: 1px solid #ccc;
-                margin-top: 6px;
-                margin-bottom: 16px;
-                resize: vertical;
-            }
-
-            input[type=submit] {
-                background-color: #04AA6D;
-                color: white;
-                padding: 12px 20px;
-                border: none;
-                cursor: pointer;
-            }
-
-            input[type=submit]:hover {
-                background-color: #45a049;
-            }
-
-
-            .container {
-                border-radius: 5px;
-                background-color: #f2f2f2;
-                padding: 10px;
-            }
-
-
-            .column {
-                float: left;
-                width: 50%;
-                margin-top: 6px;
-                padding: 20px;
-            }
-
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-
-            @media screen and (max-width: 600px) {
-
-                .column,
-                input[type=submit] {
-                    width: 100%;
-                    margin-top: 0;
-                }
-            }
-        </style>
->>>>>>> 389ddd75f63d706ede47b41e982024238bf6b593
