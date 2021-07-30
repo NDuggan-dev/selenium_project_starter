@@ -1,24 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <div id="nav-placeholder"></div>
 </head>
+
 <body>
-    <h2> Search </h2>
+    <div class="jumbotron">
+        <h1 class="display-4">Search our <b>Articles</b></h1>
+        <p class="lead">Use the search bar to enter keywords for articles</p>
+    </div>
 
-    <button id="search-button"> Search </button>
+    <div class="container" style="padding: 30px;">
+        <input class="bi bi-search" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for articles.. " >
 
-    <form>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-    </form>
-    <div id="search-list">
+
+        <ul id="myUL">
+            <li><a href="" data-toggle="modal" data-target=".bd-example-modal-lg-article1"><strong>Our newest beer </strong>Simon White, 19/08/2021</a></li>
+            <div class="modal fade bd-example-modal-lg-article1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="col-lg-12">
+                        <!-- Post title -->
+                        <h3 class="font-weight-bold mb-3"><strong>Our newest beer</strong></h3>
+                        <!-- Excerpt -->
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
+                            quod maxime
+                            placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut
+                            officiis debitis Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste error
+                            tempore, nam assumenda id, hic voluptate facilis magnam aperiam voluptates fugiat ut nobis
+                            ducimus, deserunt doloremque eveniet blanditiis a nemo culpa laborum cum inventore. Debitis
+                            deleniti et voluptates, molestias dolore cupiditate temporibus? Ullam eius accusantium, odit
+                            corrupti harum suscipit perspiciatis!.</p>
+                        <!-- Post data -->
+                        <p>by <a><strong>Simon White</strong></a>, 19/08/2018</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <li><a href="#" data-toggle="modal" data-target=".bd-example-modal-lg-article2"><strong>Business is booming </strong>Megan Crouch, 14/08/2020</a></li>
+            <div class="modal fade bd-example-modal-lg-article2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="col-lg-12">
+                        <!-- Post title -->
+                        <h3 class="font-weight-bold mb-3"><strong>Business is booming!</strong></h3>
+                        <!-- Excerpt -->
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum
+                            deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
+                            non
+                            provident Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed optio corporis
+                            cumque. Dicta adipisci accusamus laborum, assumenda earum hic soluta Lorem ipsum dolor sit
+                            amet consectetur adipisicing elit. Neque sunt consequatur, odio impedit omnis voluptatibus
+                            assumenda unde, libero asperiores maxime quos, esse placeat cumque eveniet sed animi!
+                            Nesciunt reprehenderit sed placeat? Libero iusto adipisci aliquam hic porro fugiat numquam
+                            incidunt tempore quasi ipsam. Voluptates incidunt enim esse nostrum vel praesentium..</p>
+                        <!-- Post data -->
+                        <p>by <a><strong>Megan Crouch</strong></a>, 14/08/2018</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <li><a href="#" data-toggle="modal" data-target=".bd-example-modal-lg-article3"><strong>The new fermentation process </strong>Niall Duggan, 11/08/2020</a></li>
+            <div class="modal fade bd-example-modal-lg-article3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="col-lg-12">
+                        <!-- Post title -->
+                        <h3 class="font-weight-bold mb-3"><strong>The new fermentation process</strong></h3>
+                        <!-- Excerpt -->
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                            consequuntur
+                            magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro qui dolorem ipsum quia
+                            sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolor, natus rerum vitae nisi quis, suscipit consequatur, repellat eos sunt tempore autem
+                            labore? Facilis necessitatibus temporibus ad cumque, incidunt ducimus consequatur cupiditate
+                            architecto mollitia eligendi aliquid ea minus? Obcaecati blanditiis exercitationem earum
+                            eaque ab ipsam et. Nemo ab magnam ratione eos!.</p>
+                        <!-- Post data -->
+                        <p>by <a><strong>Niall Duggan</strong></a>, 11/08/2018</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <li><a href="#" data-toggle="modal" data-target=".bd-example-modal-lg-article3"><strong>Lorem ipsum dolor sit amet </strong>Joe Bloggs, 22/02/2019</a></li>
+              <li><a href="#" data-toggle="modal" data-target=".bd-example-modal-lg-article3"><strong>Lorem ipsum dolor sit amet </strong>Steven Gerrard, 23/09/2018</a></li>
+              <li><a href="#" data-toggle="modal" data-target=".bd-example-modal-lg-article3"><strong>Lorem ipsum dolor sit </strong>Wayne Rooney, 13/12/2018</a></li>
+              <li><a href="#" data-toggle="modal" data-target=".bd-example-modal-lg-article3"><strong>Lorem, ipsum dolor </strong>Peter Crouch, 15/10/2017</a></li>
+              <li><a href="#" data-toggle="modal" data-target=".bd-example-modal-lg-article3"><strong>Lorem ipsum dolor sit amet consectetur </strong>Rory McIlroy, 13/03/2016</a></li>
+
+        </ul>
 
     </div>
-    
-    <script src="../js/search.js"></script>
+
 </body>
+
+<footer id="footer-placeholder">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/navbar.js"></script>
+    <script type="text/javascript" src="../js/footer.js"></script>
+    <script type="text/javascript" src="../js/search.js"></script>
+</footer>
+
+<style>
+    #myInput {
+        background-image: url('/css/searchicon.png');
+        /* Add a search icon to input */
+        background-position: 10px 12px;
+        /* Position the search icon */
+        background-repeat: no-repeat;
+        /* Do not repeat the icon image */
+        width: 100%;
+        /* Full-width */
+        font-size: 16px;
+        /* Increase font-size */
+        padding: 12px 20px 12px 40px;
+        /* Add some padding */
+        border: 1px solid #ddd;
+        /* Add a grey border */
+        margin-bottom: 12px;
+        /* Add some space below the input */
+    }
+
+    #myUL {
+        /* Remove default list styling */
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #myUL li a {
+        border: 1px solid #ddd;
+        /* Add a border to all links */
+        margin-top: -1px;
+        /* Prevent double borders */
+        background-color: #f6f6f6;
+        /* Grey background color */
+        padding: 12px;
+        /* Add some padding */
+        text-decoration: none;
+        /* Remove default text underline */
+        font-size: 18px;
+        /* Increase the font-size */
+        color: black;
+        /* Add a black text color */
+        display: block;
+        /* Make it into a block element to fill the whole list */
+    }
+
+    #myUL li a:hover:not(.header) {
+        background-color: #eee;
+        /* Add a hover effect to all links, except for headers */
+    }
+</style>
+
 </html>
