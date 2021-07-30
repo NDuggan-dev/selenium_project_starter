@@ -1,6 +1,6 @@
 let searchButton = document.querySelector('#search-button');
 
-let searchBar = document.querySelector("#fname")
+let searchBar = document.querySelector("#search-bar")
 
 let searchList = document.querySelector('#search-list');
 
