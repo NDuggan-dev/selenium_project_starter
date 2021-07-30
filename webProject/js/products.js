@@ -50,7 +50,7 @@ function populateElements(data){
     divCardBodyElement.appendChild(cardTextElement);
 
     let cardButtonElement = document.createElement("a");
-    cardButtonElement.setAttribute("href", `../html/product.html/?id=${data[0].id}`);
+    cardButtonElement.setAttribute("href", `product.html?id=${data[0].id}`);
     cardButtonElement.setAttribute("class", `btn btn-primary`);
     cardButtonElement.textContent = "More Information";
     divCardBodyElement.appendChild(cardButtonElement);
