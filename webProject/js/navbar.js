@@ -1,6 +1,6 @@
 (function()
  {
-     $("#nav-placeholder").load("./html/navbar.html")  
+     $("#nav-placeholder").load("../html/navbar.html")  
  })(jQuery);
 
  let titleid = document.title.toLowerCase() + "-link";
